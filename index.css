@@ -194,12 +194,12 @@ ul {
 
 .arrow {
 
-
-    background-color: rgba(255, 255, 255, 0.212);
+    position: absolute;
+    background-color: rgba(42, 189, 169, 0.589);
     border-radius: 50%;
     z-index: 10;
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     padding: 2px;
     top: 50%;
     color: white;
