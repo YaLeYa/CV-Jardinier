@@ -4,6 +4,11 @@
     }
 }
 
+@media ( max-width:794px){
+    .coordonées{
+        justify-content: center;
+    }
+}
 
 @media (max-width:600px) {
     .main {
@@ -26,6 +31,13 @@
         margin-right: 0 !important;
     }
 }
+
+@media ( max-width:481px){
+    .coordonées{
+        justify-content: flex-start;
+    }
+}
+
 @media (min-width:1200px){
 
     .coordonées, .header-box{
