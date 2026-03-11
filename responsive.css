@@ -1,28 +1,35 @@
-@media screen and (max-width: 900px) {
-    .container{
+@media (max-width:900px) {
+    .slider {
+        height: 350px;
+    }
+}
+
+
+@media (max-width:600px) {
+    .main {
         flex-wrap: wrap;
-    
     }
-    .competences ul li{
 
-        font-size: 20px;
+    .slider {
+        height: 500px;
+    }
+
+    .profil,
+    .expérience {
+        width: 100%;
+        margin: 0 20px 0 20px;
+    }
+
+    .post1,
+    .post2,
+    .post3 {
+        margin-right: 0 !important;
     }
 }
-@media screen and (max-width: 500px) {
-    
-    .container{
-        justify-content: left;
-    }
-    .profil .competences ul li{
-    
-        font-size: 16px;
-    }
-}
-@media screen and (max-width: 570px) {
-    
-    .slider{
+@media (min-width:1200px){
 
-        width: 320px;
-        height: 320px;
+    .coordonées, .header-box{
+
+        transform:translateY(-10px) ;
     }
 }
