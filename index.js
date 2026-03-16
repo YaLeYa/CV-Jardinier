@@ -31,3 +31,33 @@ previous.addEventListener('click', () => {
     slide[etape].classList.add('active');
 })
 
+document.addEventListener("DOMContentLoaded", function () {
+
+    const elements = document.querySelectorAll(".attestation img");
+
+    elements.forEach(function(el) {
+
+        el.addEventListener("click", function(e) {
+
+            e.stopPropagation();
+
+            if (el.classList.contains("active")) {
+                el.classList.remove("active");
+            } else {
+
+                elements.forEach(function(item){
+                    item.classList.remove("active");
+                });
+
+                el.classList.add("active");
+            }
+
+        });
+
+        el.addEventListener("mouseleave", function() {
+            el.classList.remove("active");
+        });
+
+    });
+
+});

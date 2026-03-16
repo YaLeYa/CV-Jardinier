@@ -8,21 +8,33 @@
     .coordonées{
         justify-content: center;
     }
+    .attestation img.active{
+    transform: scale(11) translateX(-15px);
+    position: relative;
+    z-index: 10;
+}
 }
 
-@media (max-width:600px) {
+@media (max-width:639px) {
     .main {
         flex-wrap: wrap;
     }
+    .sliderr{
+        justify-content: center;
+        height:400px ;
+    }
 
     .slider {
-        height: 500px;
+        
+        height: 400px;
+        width: 400px;
     }
 
     .profil,
     .expérience {
         width: 100%;
         margin: 0 20px 0 20px;
+
     }
 
     .post1,
@@ -30,11 +42,30 @@
     .post3 {
         margin-right: 0 !important;
     }
+    .attestation img.active{
+    transform: scale(11) translateX(0px);
+    position: relative;
+    z-index: 10;
+}
 }
 
 @media ( max-width:481px){
     .coordonées{
         justify-content: flex-start;
+    }
+    .sliderr{
+        justify-content: center;
+        height: 300px;
+    }
+    .slider{
+
+        width: 310px;
+    }
+}
+@media (max-width: 370px) {
+    .slider{
+        width: 280px;
+        height: 280px;
     }
 }
 

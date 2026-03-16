@@ -113,7 +113,7 @@
 .expérience>* {
     position: relative;
     height: 100px;
-    margin-top: 20px;
+    margin: 20px 0 10px 0;
 }
 
 .expérience ul li {
@@ -129,7 +129,22 @@
     font-size: 15px;
     color: blue;
 }
-
+.attestation{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    text-align: center;
+}
+.attestation img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.attestation img.active{
+    transform: scale(11) translateX(-15px);
+    position: relative;
+    z-index: 10;
+}
 .post1 h2,
 .post2 h2,
 .post3 h2 {
