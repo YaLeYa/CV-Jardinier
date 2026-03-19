@@ -7,6 +7,40 @@
 
 }
 
+/* ===== MODE IMPRESSION ===== */
+@media print {
+
+    @page {
+        size: A4;
+        margin: 20mm;
+    }
+
+    * {
+        
+        box-sizing: border-box;
+        background: white;
+    }
+
+    section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .page-break {
+        break-before: page;
+        page-break-before: always;
+    }
+
+    .slider,
+    .arrow,
+    .sliderr {
+        display: none !important;
+    }
+
+}
+
+/* ------------------- */
+
 .header {
     position: relative;
     display: block;
@@ -129,22 +163,26 @@
     font-size: 15px;
     color: blue;
 }
-.attestation{
+
+.attestation {
     display: flex;
     flex-wrap: wrap;
     row-gap: 20px;
     column-gap: 20px;
     text-align: center;
 }
+
 .attestation img {
     transition: transform 0.3s ease;
     cursor: pointer;
 }
-.attestation img.active{
+
+.attestation img.active {
     transform: scale(11) translateX(-15px);
     position: relative;
     z-index: 10;
 }
+
 .post1 h2,
 .post2 h2,
 .post3 h2 {
