@@ -7,40 +7,6 @@
 
 }
 
-/* ===== MODE IMPRESSION ===== */
-@media print {
-
-    @page {
-        size: A4;
-        margin: 20mm;
-    }
-
-    * {
-        
-        box-sizing: border-box;
-        background: white;
-    }
-
-    section {
-        break-inside: avoid;
-        page-break-inside: avoid;
-    }
-
-    .page-break {
-        break-before: page;
-        page-break-before: always;
-    }
-
-    .slider,
-    .arrow,
-    .sliderr {
-        display: none !important;
-    }
-
-}
-
-/* ------------------- */
-
 .header {
     position: relative;
     display: block;
