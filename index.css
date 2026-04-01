@@ -253,8 +253,21 @@
     margin-top: 20px;
 }
 
+.compétence-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+
+}
+.compétence-text h4{
+    text-decoration: underline;
+}
 .compétence-text ul li {
     margin-top: 5px;
+    list-style:circle;
+}
+.formation-module li{
+    margin-bottom: 5px;
 }
 
 /* SLIDER */
