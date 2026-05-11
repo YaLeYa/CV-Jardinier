@@ -1,31 +1,41 @@
+
+
+@media (max-width:1100px) {
+    .slider .plantations2 {
+        width:350px !important;
+        transform: scaleX(-200px) !important ;
+    }
+}
 @media (max-width:900px) {
     .slider {
         height: 350px;
     }
 }
 
-@media ( max-width:794px){
-    .coordonées{
+@media (max-width:794px) {
+    .coordonées {
         justify-content: center;
     }
-    .attestation img.active{
-    transform: scale(11) translateX(-15px);
-    position: relative;
-    z-index: 10;
-}
+
+    .attestation img.active {
+        transform: scale(11) translateX(-15px);
+        position: relative;
+        z-index: 10;
+    }
 }
 
 @media (max-width:639px) {
     .main {
         flex-wrap: wrap;
     }
-    .sliderr{
+
+    .sliderr {
         justify-content: center;
-        height:400px ;
+        height: 400px;
     }
 
     .slider {
-        
+
         height: 400px;
         width: 400px;
     }
@@ -42,37 +52,47 @@
     .post3 {
         margin-right: 0 !important;
     }
-    .attestation img.active{
-    transform: scale(11) translateX(0px);
-    position: relative;
-    z-index: 10;
-}
+
+    .attestation img.active {
+        transform: scale(11) translateX(0px);
+        position: relative;
+        z-index: 10;
+
+    }
+    .cityse{
+        height: 350px !important;
+        object-fit: cover;
+    }
 }
 
-@media ( max-width:481px){
-    .coordonées{
+@media (max-width:481px) {
+    .coordonées {
         justify-content: flex-start;
     }
-    .sliderr{
+
+    .sliderr {
         justify-content: center;
         height: 300px;
     }
-    .slider{
+
+    .slider {
 
         width: 310px;
     }
 }
+
 @media (max-width: 370px) {
-    .slider{
+    .slider {
         width: 280px;
         height: 280px;
     }
 }
 
-@media (min-width:1200px){
+@media (min-width:1200px) {
 
-    .coordonées, .header-box{
+    .coordonées,
+    .header-box {
 
-        transform:translateY(-10px) ;
+        transform: translateY(-10px);
     }
 }
